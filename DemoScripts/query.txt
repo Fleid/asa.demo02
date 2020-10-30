@@ -1,0 +1,14 @@
+
+SELECT
+	SystemProperties.connectionDeviceId,
+	SystemProperties.connectionModuleId,
+	System.Timestamp as enqueuedTime,
+	COUNT(*) AS messageCount
+INTO
+	[YourOutputAlias]
+FROM
+	masks TIMESTAMP BY SystemProperties.enqueuedTime
+GROUP BY 
+	TumblingWindow(minute,1),
+	SystemProperties.connectionDeviceId,
+	SystemProperties.connectionModuleId
