@@ -1,0 +1,24 @@
+{
+  "Script": "C:\\users\\fleide\\repos\\asa.demo02\\ASATest1\\ASATest1.asaql",
+  "TestCases": [
+    {
+      "Name": "Case 1",
+      "Inputs": [
+        {
+          "InputAlias": "iothub01",
+          "Type": "Data Stream",
+          "Format": "Json",
+          "FilePath": "01.json",
+          "ScriptType": "InputMock"
+        }
+      ],
+      "ExpectedOutputs": [
+        {
+          "OutputAlias": "youroutputalias",
+          "FilePath": "youroutputalias.json",
+          "Required": true
+        }
+      ]
+    }
+  ]
+}
