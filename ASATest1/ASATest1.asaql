@@ -4,4 +4,4 @@ SELECT
 INTO
 	[YourOutputAlias]
 FROM
-	[YourInputAlias]
+	IoTHub01

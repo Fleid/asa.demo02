@@ -1,0 +1,7 @@
+{
+    "InputAlias": "IoTHub01",
+    "Type": "Data Stream",
+    "Format": "Json",
+    "FilePath": "01.json",
+    "ScriptType": "InputMock"
+}

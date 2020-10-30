@@ -5,6 +5,10 @@
         {
             "filePath": "JobConfig.json",
             "subType": "JobConfig"
+        },
+        {
+            "filePath": "Inputs/Local_IoTHub01.json",
+            "subType": "InputMock"
         }
     ]
 }
